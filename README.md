@@ -4,17 +4,17 @@ This project explores the evolution of the relationship between air pollution an
 
 ![example placedholder image](res/placeholder.png)
 
-## Context
+### Context
 
 This project was developed in the context of the Computational Design Laboratory course of the master’s degree in [Design and Multimedia](https://dm.dei.uc.pt/en/about/) of the [Faculty of Sciences and Technology of the University of Coimbra](https://www.uc.pt/fctuc/). 
 
-## Technologies used
+### Technologies used
 
 The main languages used in the development of this project were HTML, CSS and Javascript, and the [p5.js](https://p5js.org/) library.
 
-## License
+### License
 
-This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the `[License Name]` - see the [LICENSE](LICENSE) file for details.
 
 ### Contributors
 
@@ -24,3 +24,4 @@ This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) fi
 - [Penousal Machado](https://cdv.dei.uc.pt/people/penousal-machado) - supervision
 - [Sérgio M. Rebelo](https://cdv.dei.uc.pt/people/sergio-rebelo) - supervision
 - [Tiago Martins](https://cdv.dei.uc.pt/people/tiago-martins) - supervision
+
