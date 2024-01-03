@@ -18,7 +18,7 @@ This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) fi
 
 ### Contributors
 
-- [Carlos Alves](https://github.com/yourname) - design and development
+- [Carlos Alves](https://github.com/carlosjalves) - design and development
 - [João M. Cunha](https://cdv.dei.uc.pt/people/joao-cunha) - supervision
 - [Pedro Silva](https://cdv.dei.uc.pt/people/pedro-silva) - supervision
 - [Penousal Machado](https://cdv.dei.uc.pt/people/penousal-machado) - supervision
