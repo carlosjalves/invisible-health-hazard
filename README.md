@@ -14,7 +14,7 @@ The main languages used in the development of this project were HTML, CSS and Ja
 
 ## License
 
-This project is licensed under the `[License Name]` - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) file for details.
 
 ### Contributors
 
