@@ -2,7 +2,7 @@
 
 This project explores the evolution of the relationship between air pollution and the number of deaths attributed to this problem over the years through a data visualization, providing a more tangible demonstration of the impact of air quality on health.
 
-![example placedholder image](res/placeholder.png)
+![Representative image](res/example.png)
 
 ### Context
 
