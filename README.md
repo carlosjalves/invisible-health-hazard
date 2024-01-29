@@ -25,3 +25,6 @@ This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) fi
 - [Sérgio M. Rebelo](https://cdv.dei.uc.pt/people/sergio-rebelo) - supervision
 - [Tiago Martins](https://cdv.dei.uc.pt/people/tiago-martins) - supervision
 
+### Data
+
+Data collected from [Our World in Data](https://ourworldindata.org/) and [World Health Organization](https://www.who.int/)
