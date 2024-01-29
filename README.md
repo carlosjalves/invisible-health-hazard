@@ -10,7 +10,7 @@ This project was developed in the context of the Computational Design Laboratory
 
 ### Technologies used
 
-The main languages used in the development of this project were HTML, CSS and Javascript, and the [p5.js](https://p5js.org/) library.
+The main languages used in the development of this project were HTML, CSS, Javascript, and the [p5.js](https://p5js.org/) library.
 
 ### License
 
@@ -27,4 +27,4 @@ This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) fi
 
 ### Data
 
-Data collected from [Our World in Data](https://ourworldindata.org/) and [World Health Organization](https://www.who.int/)
+Data collected from [Our World in Data](https://ourworldindata.org/) and [World Health Organization](https://www.who.int/).
