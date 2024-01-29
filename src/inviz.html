@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.2/chroma.min.js" integrity="sha512-8TVPS0EFkkmtT6yPb5K4csnSt3tjbKRrs0F8gvTNKv2OxOcwDO7+Klkz86gMVrzfqtZos5N2a+k+r9D+hlccmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--"https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js";-->
+
+  <title>Invisible Health Hazard</title>
+</head>
+<body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+#slider-area{
+  width: 100%;
+  height: 18%;
+  position: absolute;
+  bottom:0;
+ 
+}
+
+    .mySlider{
+  width: 80px;
+  background-color: transparent;
+  
+  /* Removes some defaults */
+  -webkit-appearance: none;
+}
+
+
+/* These styles affect what happens when the cursor is focused on the slider (i.e. clicking it) */
+.mySlider:focus {
+  
+  /* Stops the default outline showing up */
+  outline: none;
+}
+
+/* This is the "track" that the slider sits on  */
+.mySlider::-webkit-slider-runnable-track {
+  background: #434343;
+  height: 2px;
+  -webkit-appearance: none;
+  
+  /* Turns the cursor into the hand pointer icon when hovering over the slider  */
+  cursor: pointer;
+  margin-top: 8px;
+  
+}
+
+/* This is the moveable bit of the slider, known as the "thumb"*/
+.mySlider::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background: #434343;
+  cursor: pointer;
+  -webkit-appearance: none;
+  
+  /* negative top padding moves it up */
+  margin-top: -6px;
+
+  
+  /* Border radius gives rounded corners, if they're big enough, you end up with circles */
+  border-radius: 8px;
+  
+}
+
+button {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 22px;
+  
+  border-color: black black black #434343; /*d0d0d0*/
+  transition: 100ms all ease;
+  will-change: border-width;
+  cursor: pointer;
+}
+#slider-area:hover ~ button{
+  border-color: black black black #d0d0d0;
+}
+
+#slider-area:hover ~ .mySlider::-webkit-slider-runnable-track {
+  background: #d0d0d0;
+}
+
+#slider-area:hover ~ .mySlider::-webkit-slider-thumb {
+  background: #d0d0d0;
+}
+
+.play {
+  /*play state*/
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+
+  /*paused state
+  &.pause {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+  }*/
+}
+.pause{
+  border-style: double;
+    border-width: 0px 0 0px 15px;
+    /*border-color: black black black #ffffff;*/
+}
+
+#legend{
+  display: none;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+  </style>
+  
+  <div id="example-container"></div>
+  <img id="legend" src = "assets/img/legend.svg" width="200px" style="display: none;"/>
+  <div id="slider-area"></div>
+
+  <script src="scripts/inviz.js"></script> <!-- libs5.js  -->
+</body>
+</html>
