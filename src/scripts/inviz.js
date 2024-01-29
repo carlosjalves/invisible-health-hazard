@@ -7,10 +7,6 @@ let selectedYear; // Variável para armazenar o ano selecionado
 let drawHistory = false;
 
 let table, fontBold, fontRegular; // A tabela que armazenará os dados do CSV
-//let years = [];
-//let currentYear = 1890;
-//let interval = 3000; // Intervalo em milissegundos entre cada ano
-//let lastUpdateTime = 0;
 let currentYear = 1800;
 let interval = 3000; // Intervalo em milissegundos entre cada ano
 let lastUpdateTime = 0;
@@ -37,14 +33,15 @@ let selectedTimelineEllipseIndex = -1;
 let selectedTimelineEllipseIndex2 = -1;
 let edge = false;
 let legend = false;
+let info = false;
 let isTimelineSelected = false;
 let isTimelineSelected2 = false;
 let compare = false;
-
 let anoInit = -1;
-
 let legend_div;
+let info_div;
 p5.disableFriendlyErrors = true;
+
 
 
 function preload() {
@@ -61,6 +58,9 @@ function setup() {
 
   legend_div = select("#legend");
   legend_div.style("display", "none");
+
+  info_div = select(".hide-container");
+  info_div.style("display", "none");
  
 
   for (let n = 0; n < table.getRowCount(); n++) {
@@ -219,6 +219,12 @@ function draw() {
     legend_div.style("display", "none");
   }else{
     legend_div.style("display", "block");
+  }
+
+  if(!info){
+    info_div.style("display", "none");
+  }else{
+    info_div.style("display", "block");
   }
   
   
@@ -1162,6 +1168,11 @@ class TimelineParticleElement {
     if(mouseHoverX(40, 35,15)){
       if(!legend) legend = true;
       else legend = false;
+    }
+
+    if(mouseHoverX(width-40, 35,15)){
+      if(!info) info = true;
+      else info = false;
     }
 
     

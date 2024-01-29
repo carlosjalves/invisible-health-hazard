@@ -118,11 +118,69 @@ button {
   margin-top: 60px;
   margin-left: 30px;
 }
+
+.hide-container{
+            position: absolute;
+            width: 50%;
+            height: 440px;
+            background-color: black;
+            border: 2px solid #434343;
+            border-radius: 40px;
+            transform: translate(50%, 30%);
+            display:block;
+            z-index: 5;
+            font-family: 'Exo 2', sans-serif;
+        }
+        .hide{
+            position: absolute;
+            width: 70%;
+            height: 100%;
+            text-align: justify;
+            padding: 0;
+            color: grey;
+            top: 52%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            line-height: 1.5;
+        }
+        .hide h1{
+          text-align: center;
+            color: white;
+        }
+        .hide p:last-child{
+          font-size: 13px;
+        }
+        /*.about:hover + .hide-container {
+            display: block;
+        }*/
+        .loadingclass{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          z-index: 10;
+        }
   </style>
+
+<div id="p5_loading" class="loadingclass">
+  
+</div>
   
   <div id="example-container"></div>
   <img id="legend" src = "assets/img/legend.svg" width="200px" style="display: none;"/>
   <div id="slider-area"></div>
+
+  <div class="hide-container">
+    <div class="hide">
+      <h1>Project Info</h1>
+        <p>This project explores the evolution of the relationship between air pollution and the number of deaths attributed to this problem over the years through a data visualization, providing a more tangible demonstration of the impact of air quality on health.</p>
+        <p>It was developed in the context of the Computational Design Laboratory course of the master’s degree in Design and Multimedia of the Faculty of Sciences and Technology of the University of Coimbra.</p>
+        <p>Made by Carlos Alves.</p>
+
+        <p>Data collected from Our World in Data and World Health Organization.</p>
+    </div>
+</div>
 
   <script src="scripts/inviz.js"></script> <!-- libs5.js  -->
 </body>
